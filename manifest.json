@@ -1,0 +1,13 @@
+{
+	"name": "YouTube Like-View Ratio",
+	"version": "1.0.0",
+	"description": "See the ratio of likes to views!",
+	"manifest_version": 2,
+	"content_scripts": [
+		{
+			"matches": ["*://*/*"],
+			"include_globs": ["*://*.youtube.*/*"],
+			"js": ["ratio.js"]
+		}
+	]
+}
