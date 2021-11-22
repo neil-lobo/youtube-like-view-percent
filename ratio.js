@@ -12,7 +12,7 @@ function createElement() {
     let views
     let likes
     try {
-        views = parseInt(document.querySelector("#info-text").querySelector("#count").children[0].children[0].innerText.split(" ")[0].split(",").join(""))
+        views = parseInt(document.querySelector("ytd-video-view-count-renderer").children[0].innerText.split(" ")[0].split(",").join(""))
         likes = document.querySelector("#menu-container").querySelector("ytd-menu-renderer").querySelector("#top-level-buttons-computed").children[0].querySelector("#text").innerText
     } catch (err) {
         console.error(err)
